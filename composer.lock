@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c804e4a8c3c1ea0e6dd61980c279cdd",
+    "content-hash": "7892ce9d1fc8671cb8016d4b7f6088a2",
     "packages": [
+        {
+            "name": "authorizenet/authorizenet",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AuthorizeNet/sdk-php.git",
+                "reference": "8555cc245953dd0ac57f7ea424a5572eae4c7191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AuthorizeNet/sdk-php/zipball/8555cc245953dd0ac57f7ea424a5572eae4c7191",
+                "reference": "8555cc245953dd0ac57f7ea424a5572eae4c7191",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Official PHP SDK for Authorize.Net",
+            "homepage": "http://developer.authorize.net",
+            "keywords": [
+                "authorize.net",
+                "authorizenet",
+                "ecommerce",
+                "payment"
+            ],
+            "support": {
+                "issues": "https://github.com/AuthorizeNet/sdk-php/issues",
+                "source": "https://github.com/AuthorizeNet/sdk-php/tree/2.0.4"
+            },
+            "time": "2024-09-18T06:23:52+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.1",
@@ -3116,6 +3159,58 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "sharik709/laravel-authorizenet",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharik709/laravel-authorizenet.git",
+                "reference": "f5c16be5066c0df862f69a19951c5c53db79bb61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sharik709/laravel-authorizenet/zipball/f5c16be5066c0df862f69a19951c5c53db79bb61",
+                "reference": "f5c16be5066c0df862f69a19951c5c53db79bb61",
+                "shasum": ""
+            },
+            "require": {
+                "authorizenet/authorizenet": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ANet\\AuthorizeNetServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ANet\\": "./src/",
+                    "ANet\\Test\\": "./tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sharik Shaikh",
+                    "email": "shaikhsharik709@gmail.com"
+                }
+            ],
+            "description": "This package allows laravel application to use authorizenet api easily.",
+            "support": {
+                "issues": "https://github.com/sharik709/laravel-authorizenet/issues",
+                "source": "https://github.com/sharik709/laravel-authorizenet/tree/v0.2"
+            },
+            "time": "2020-04-22T11:50:52+00:00"
         },
         {
             "name": "symfony/clock",
